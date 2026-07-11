@@ -301,6 +301,10 @@ footer a:hover {
 
     main {
         padding: 0 15px;
+ 
+    }
+        .banniere {
+        padding-bottom: 10px;
     }
 
     .image-gauche,
