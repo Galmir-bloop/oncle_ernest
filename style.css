@@ -168,7 +168,8 @@ nav a {
     padding: 6px;
 }
 
-.menu-deroulant:hover .sous-menu {
+.menu-deroulant:hover .sous-menu,
+.menu-deroulant:focus-within .sous-menu {
     display: block;
 }
 
