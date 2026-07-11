@@ -103,7 +103,7 @@ p {
 
 figure {
     text-align: center;
-    margin: 30px auto;
+    margin: 15px auto;
 }
 
 figure img {
@@ -122,6 +122,13 @@ figcaption {
 
 .image-presentation img {
     max-width: 500px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.image-petite img {
+    max-width: 200px;
     height: auto;
     display: block;
     margin: auto;
@@ -173,8 +180,17 @@ nav a {
     content: " • ";
     margin: 0 10px;
 }
+
 .video {
-    text-align:center;
+    text-align: center;
+}
+
+.video iframe {
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: 3px solid #777;
 }
 
 .video iframe {
@@ -254,4 +270,34 @@ footer a:hover {
 
 nav a {
     font-weight: normal;
+}
+
+@media (max-width: 768px) {
+
+    .banniere {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .image-gauche,
+    .image-droite {
+        width: 70%;
+        max-width: 220px;
+        margin: 0;
+    }
+
+    .bloc-titre {
+        width: 100%;
+    }
+
+    .logo-site {
+        max-width: 320px;
+    }
+
+    .sous-titre {
+        margin-top: 8px;
+        font-size: 14px;
+        line-height: 1.2;
+        padding: 0 10px;
+    }
 }
