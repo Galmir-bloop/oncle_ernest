@@ -303,9 +303,6 @@ footer a:hover {
         padding: 0 15px;
  
     }
-        .banniere {
-        padding-bottom: 10px;
-    }
 
     .image-gauche,
     .image-droite {
@@ -314,6 +311,7 @@ footer a:hover {
 
     .bloc-titre {
         width: 100%;
+        padding: 8px 0;
     }
 
     .logo-site {
