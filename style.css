@@ -94,11 +94,27 @@ p {
     text-align: justify;
 }
 
-.image-cover img {
-    max-width: 250px;
+.image-cover img,
+.image-presentation img,
+.image-petite img,
+figure img {
+    width: 100%;
     height: auto;
     display: block;
     margin: auto;
+}
+
+.image-cover img {
+    max-width: 250px;
+}
+
+.image-presentation img,
+figure img {
+    max-width: 500px;
+}
+
+.image-petite img {
+    max-width: 200px;
 }
 
 figure {
@@ -106,32 +122,11 @@ figure {
     margin: 15px auto;
 }
 
-figure img {
-    max-width: 500px;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-
 figcaption {
     font-family: "Special Elite", cursive;
     font-size: 15px;
     color: #6b4b1d;
     margin-top: 10px;
-}
-
-.image-presentation img {
-    max-width: 500px;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-
-.image-petite img {
-    max-width: 200px;
-    height: auto;
-    display: block;
-    margin: auto;
 }
 
 nav {
@@ -268,6 +263,9 @@ nav a {
 }
 
 @media (max-width: 768px) {
+    main {
+        padding: 0 15px;
+    }
 
     .image-gauche,
     .image-droite {
@@ -287,4 +285,3 @@ nav a {
         font-size: 14px;
         padding: 0 15px;
     }
-}
