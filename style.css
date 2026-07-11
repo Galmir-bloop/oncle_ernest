@@ -274,16 +274,9 @@ nav a {
 
 @media (max-width: 768px) {
 
-    .banniere {
-        flex-direction: column;
-        gap: 8px;
-    }
-
     .image-gauche,
     .image-droite {
-        width: 70%;
-        max-width: 220px;
-        margin: 0;
+        display: none;
     }
 
     .bloc-titre {
@@ -291,13 +284,12 @@ nav a {
     }
 
     .logo-site {
-        max-width: 320px;
+        width: 95%;
+        max-width: 380px;
     }
 
     .sous-titre {
-        margin-top: 8px;
         font-size: 14px;
-        line-height: 1.2;
-        padding: 0 10px;
+        padding: 0 15px;
     }
 }
