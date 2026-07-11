@@ -223,6 +223,10 @@ nav a {
   background-color: #273c75;
 }
 
+a {
+    font-weight: bold;
+}
+
 footer {
     text-align: center;
     font-size: 12px;
