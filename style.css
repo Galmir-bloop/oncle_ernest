@@ -122,6 +122,14 @@ figure {
     margin: 15px auto;
 }
 
+.illustration img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
 figcaption {
     font-family: "Special Elite", cursive;
     font-size: 15px;
@@ -284,4 +292,5 @@ nav a {
     .sous-titre {
         font-size: 14px;
         padding: 0 15px;
+    }
     }
