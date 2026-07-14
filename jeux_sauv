@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Les jeux - Site non officiel de l'Oncle Ernest</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+
+<div class="banniere">
+
+    <img class="image-gauche" src="images/banniere_1_v2.png" alt="">
+
+    <div class="bloc-titre">
+        <img class="logo-site" src="images/banniere_titre_v2.png" alt="L'Oncle Ernest">
+
+        <div class="sous-titre">
+            site non officiel consacré à la série de jeux PC
+        </div>
+    </div>
+
+    <img class="image-droite" src="images/banniere_2_v2.png" alt="">
+
+</div>
+
+<nav>
+
+<div class="menu-item"><a href="index.html">ACCUEIL</a></div>
+<div class="menu-item"><a href="presentation.html">PRESENTATION</a></div>
+<div class="menu-item"><a href="jeux.html">LES JEUX</a></div>
+
+<div class="menu-item menu-deroulant">
+
+    <span>SOLUTION DETAILLEE</span>
+
+    <div class="sous-menu">
+        <a href="soluce-jeu1.html">L'Album secret</a>
+        <a href="soluce-jeu2.html">Le Fabuleux Voyage</a>
+        <a href="soluce-jeu3.html">L'Île Mystérieuse</a>
+        <a href="soluce-jeu4.html">Le Temple perdu</a>
+        <a href="soluce-jeu5.html">La Statuette maudite</a>
+        <a href="soluce-jeu6.html">Le Trésor de l'oncle Ernest</a>
+    </div>
+
+</div>
+
+<div class="menu-item menu-deroulant">
+
+    <span>ERIC VIENNOT</span>
+
+    <div class="sous-menu">
+        <a href="auteur.html">Portrait</a>
+        <a href="interview3.html">Interview du 08/12/2000</a>
+        <a href="interview2.html">Interview du 16/08/1999</a>
+        <a href="interview1.html">Interview du 04/11/1998</a>
+    </div>
+
+</div>
+
+<div class="menu-item menu-deroulant">
+
+    <span>RESSOURCES</span>
+
+    <div class="sous-menu">
+        <a href="biographie.html">Biographie officielle de l'Oncle Ernest</a>
+        <a href="makingof.html">Making of</a>
+        <a href="musique.html">Musique</a>
+    </div>
+</div>
+
+<div class="menu-item menu-deroulant">
+
+    <span>BONUS</span>
+
+    <div class="sous-menu">
+        <a href="anecdotes.html">Anecdotes</a>
+        <a href="fanmade.html">Fan Game</a>
+        <a href="letsplay.html">Let's play</a>
+        <a href="archives.html">Archives</a>
+    </div>
+
+</div>
+
+</nav>
+
+</header>
+
+<main>
+
+<h1>L'Album secret de l’oncle Ernest (1998)</h1>
+
+<div class="image-cover">
+    <img src="images/couverture_1.jpg" alt="Couverture Album secret">
+</div>
+
+<p>Le fabuleux trésor de l'oncle Ernest est-il réellement perdu?</p>
+
+<p>En retrouvant son album secret au fond du grenier, vous pourriez bien dire le contraire...
+à condition de savoir résoudre les énigmes, déjouer les pièges tendus et ouvrir les passages secrets cachés dans cet album fantastique.</p>
+
+<p>Les animaux malicieux, les outils amusants, les machines bizarres rencontrés au fil des pages, pourront vous aider dans cette quête.</p>	
+
+<p>A vous de faire preuve d'intelligence, d'esprit d'observation et d'habileté...</p>
+
+<div class="tableau">
+    <img src="images/couverture_1.jpg" alt="Couverture Album secret">
+
+    <div class="tableau-texte">
+        
+        <p>Le fabuleux trésor de l'oncle Ernest est-il réellement perdu?</p>
+
+        <p>En retrouvant son album secret au fond du grenier, vous pourriez bien dire le contraire...
+à condition de savoir résoudre les énigmes, déjouer les pièges tendus et ouvrir les passages secrets cachés dans cet album fantastique.</p>
+
+        <p>Les animaux malicieux, les outils amusants, les machines bizarres rencontrés au fil des pages, pourront vous aider dans cette quête.</p>	
+
+        <p>A vous de faire preuve d'intelligence, d'esprit d'observation et d'habileté...</p>
+    </div>
+</div>
+
+<div class="video">
+
+<iframe
+ width="560" height="315"
+src="https://www.youtube.com/embed/wgJUTS3sZIk?si=z6eF-8qBqQ9MPA5A"
+title="YouTube video player"
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin"
+allowfullscreen> 
+</iframe>
+
+</div>
+
+<h1>Le Fabuleux Voyage de l'oncle Ernest (1999)</h1>
+
+<div class="image-cover">
+    <img src="images/couverture_2.jpg" alt="Capture d'écran du jeu">
+</div>
+
+<p>De ses nombreux voyages, l’oncle Ernest a rapporté plein de secrets.</p>
+ 
+<p>Découvrirez-vous celui qui permettra de sauver Tom, son caméléon apprivoisé, menacé par un grave danger ?</p>
+
+<p>En partant sur ses traces aux quatre coins du monde, vous n’avez pas fini d’être étonné... D’Istanbul à Zanzibar, en passant par Bornéo, l’Amazonie et de nombreux pays lointains, voici un fabuleux voyage riche en surprises et en rebondissements.</p>
+
+<p>Crocodiles, plantes carnivores, crabes facétieux, recettes magiques, l’oncle Ernest ne doute pas de vos qualités pour venir à bout des nombreux obstacles placés sur votre route...</p>
+
+<h1>L'Île Mystérieuse de l'oncle Ernest (2000)</h1>
+
+<div class="image-cover">
+    <img src="images/couverture_3.jpg" alt="Capture d'écran du jeu">
+</div>
+
+<p>Quel est donc cet étrange secret que l'Oncle Ernest a rapporté de son île lointaine ?</p>
+
+<p>Une nouvelle fois, son album vous aidera sans doute à éclaircir le mystère…</p>
+
+<p>Vous devrez pour cela explorer l'île dans ses moindres recoins, comprendre les curieux mécanismes qui vous ouvriront les passages secrets, et surtout faire face à l'étrange malédiction qui hante ces lieux inhabités depuis des siècles...</p>
+
+<p>Pirates redoutables, machines bizarres, singe malicieux, perroquet moqueur :
+à vous de faire preuve d'astuce et d'habileté pour vaincre les obstacles
+et résoudre l'énigme.</p>
+
+<h1>Le Temple perdu de l'oncle Ernest (2003)</h1>
+
+<div class="image-cover">
+    <img src="images/couverture_4.jpg" alt="Capture d'écran du jeu">
+</div>
+
+<p>Quel secret peut donc contenir ce vieil album retrouvé au fond de la forêt amazonienne ?</p>
+
+<p>Pour le savoir il va falloir partir sur les traces de l’oncle Ernest aux quatre coins du Pérou : une expédition semée d’embûches au cours de laquelle vous devrez surmonter d’étranges malédictions Incas, résoudre de curieuses énigmes, affronter scorpions et piranhas... Heureusement, vous pourrez compter sur le courage de Chipikan, votre compagnon dans cette quête, dont le destin est désormais entre vos mains.</p>
+
+<h1>La Statuette maudite de l'oncle Ernest (2004)</h1>
+
+<div class="image-cover">
+    <img src="images/couverture_5.jpg" alt="Capture d'écran du jeu">
+</div>
+
+<p>Une grande aventure en Asie</p>
+<p>En partant pour les terres enneigées du Népal, Chipikan ne se doute pas du long périple qui l’attend. Pour sauver son peuple de la colère du volcan, il devra surmonter bien des épreuves et trouver l’amulette sacrée. Heureusement, il pourra compter sur vous ainsi que sur l' « insectorobot », un robot entièrement programmable imaginé par l’oncle Ernest. Votre courage, votre intuition et votre jugeote lui seront également bien utiles…</p>
+
+<h1>Le Trésor de l'oncle Ernest (2000) - Livre</h1>
+
+<div class="image-cover">
+    <img src="images/couverture_6.jpg" alt="Capture d'écran du jeu">
+</div>
+
+<p>Retrouvé au fond d'un grenier, l'album de voyages que vous avez dans les mains renferme un formidable secret.
+Pour preuve, ces indices précieux que l'oncle Ernest a soigneusement dissimulés parmi les nombreux objets, dessins et souvenirs collectés aux quatre coins du monde.</p>
+
+<p>En les décodant, vous partirez sur ses traces à la recherche d'un mystérieux album.</p>
+
+<p></p>Né sur CD-Rom, l'oncle Ernest devient sans doute le premier personnage du multimédia pour enfants à faire l'objet d'une déclinaison sous forme de livre.</p>
+
+<div class="video">
+
+<iframe
+ width="560" height="315"
+src="https://www.youtube.com/embed/505pqEYAtSs?si=BtK4wOd9tXp0L7AX"
+title="YouTube video player"
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin"
+allowfullscreen> 
+</iframe>
+
+</div>
+
+</main>
+
+<footer class="footer-site">
+© 2026 • Site non officiel consacré aux Aventures de l'Oncle Ernest<br>
+<a href="mentions-legales.html">Mentions légales</a> • <a href="contact.html">Contact</a>
+</footer>
+
+</body>
+
+</html>
