@@ -123,6 +123,29 @@ Les jeux, personnages, visuels et autres éléments liés à <em>Les Aventures d
 <a href="mentions-legales.html">Mentions légales</a> • <a href="contact.html">Contact</a>
 </footer>
 
+<div class="cloporte" aria-hidden="true">
+    <img src="images/cloporte.png" alt="">
+</div>
+
+<script>
+const cloporte = document.querySelector('.cloporte');
+
+function promenade() {
+    cloporte.classList.remove('apparition');
+
+    // Force le navigateur à recalculer l'animation
+    void cloporte.offsetWidth;
+
+    cloporte.classList.add('apparition');
+
+    const prochainePromenade = Math.random() * 30000 + 30000;
+
+    setTimeout(promenade, prochainePromenade);
+}
+
+setTimeout(promenade, 15000);
+</script>
+
 </body>
 
 </html>

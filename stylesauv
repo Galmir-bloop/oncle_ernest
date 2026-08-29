@@ -218,22 +218,7 @@ nav::after {
 nav a {
     color: black;
     text-decoration: none;
-}
-
-nav > .menu-item > a,
-nav > .menu-item > span,
-.sous-menu a {
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 4px;
-    text-decoration-color: transparent;
-    transition: text-decoration-color 0.2s ease;
-}
-
-nav > .menu-item:hover > a,
-nav > .menu-item:hover > span,
-.sous-menu a:hover {
-    text-decoration-color: #000;
+    font-weight: bold;
 }
 
 .menu-item {
@@ -354,40 +339,6 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
-
-/* =========================
-   ANIMATION CLOPORTE
-========================= */
-
-.cloporte {
-    position: fixed;
-    left: -60px;
-    bottom: 15px;
-    width: 45px;
-    z-index: 1000;
-    pointer-events: none;
-    opacity: 0;
-}
-
-.cloporte img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.cloporte.apparition {
-    animation: promenade-cloporte 8s linear forwards;
-}
-
-@keyframes promenade-cloporte {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(calc(100vw + 120px));
-    }
 }
 
 
