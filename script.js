@@ -169,8 +169,12 @@ function faireTraverserCloporte() {
 }
 
 
-// Fait apparaître un premier cloporte
-faireTraverserCloporte();
+// Active les cloportes uniquement sur les écrans de plus de 768px
+if (window.innerWidth > 768) {
 
-// Fait apparaître un nouveau cloporte toutes les 12 secondes
-setInterval(faireTraverserCloporte, 12000);
+    // Fait apparaître un premier cloporte
+    faireTraverserCloporte();
+
+    // Fait apparaître un nouveau cloporte toutes les 12 secondes
+    setInterval(faireTraverserCloporte, 12000);
+}
