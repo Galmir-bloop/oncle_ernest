@@ -357,37 +357,24 @@ footer a:hover {
 }
 
 /* =========================
-   ANIMATION CLOPORTE
+   CLOPORTE
 ========================= */
 
-.cloporte {
+#cloporte-container {
     position: fixed;
-    left: -60px;
-    bottom: 15px;
-    width: 45px;
-    z-index: 1000;
+    inset: 0;
     pointer-events: none;
-    opacity: 0;
+    overflow: hidden;
+    z-index: 9999;
 }
 
-.cloporte img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.cloporte.apparition {
-    animation: promenade-cloporte 8s linear forwards;
-}
-
-@keyframes promenade-cloporte {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(calc(100vw + 120px));
-    }
+.cloporte {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    pointer-events: auto;
+    cursor: pointer;
 }
 
 
