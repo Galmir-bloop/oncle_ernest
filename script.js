@@ -338,26 +338,52 @@ function faireTraverserCloporte() {
 
 
 
-
-
 // Active les cloportes uniquement sur les écrans de plus de 768px
 
 if (window.innerWidth > 768) {
 
+    let timerCloporte = null;
+
+    // Programme la prochaine apparition
+    function programmerCloporte(delai) {
+
+        clearTimeout(timerCloporte);
+
+        timerCloporte = setTimeout(() => {
+
+            // Si la page est visible, on fait apparaître un cloporte
+            if (!document.hidden) {
+                faireTraverserCloporte();
+            }
+
+            // Puis on programme le suivant
+            programmerCloporte(16000);
+
+        }, delai);
+
+    }
+
+    // Première apparition après 5 secondes
+    programmerCloporte(5000);
 
 
-    // Attend 5 secondes avant de faire apparaître le premier cloporte
+    // Si l'utilisateur quitte la page
+    document.addEventListener("visibilitychange", () => {
 
-    setTimeout(faireTraverserCloporte, 5000);
+        if (document.hidden) {
 
+            // Annule le prochain cloporte
+            clearTimeout(timerCloporte);
 
+        } else {
 
-    // Fait apparaître un nouveau cloporte toutes les 16 secondes
+            // Au retour, on repart avec un délai complet de 16 secondes
+            programmerCloporte(16000);
 
-    setInterval(faireTraverserCloporte, 16000);
+        }
 
+    });
 }
-
 
 
 // spoil
