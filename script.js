@@ -60,7 +60,7 @@ function faireTraverserCloporte() {
     if (direction === "haut") dy = -1;
 
     // Vitesse du cloporte
-    const vitesse = 0.7 + Math.random() * 1.4;
+    const vitesse = 1.2 + Math.random() * 1.4;
 
     // Gestion des changements de direction
     let dernierChangement = performance.now();
@@ -175,6 +175,16 @@ if (window.innerWidth > 768) {
     // Fait apparaître un premier cloporte
     faireTraverserCloporte();
 
-    // Fait apparaître un nouveau cloporte toutes les 12 secondes
-    setInterval(faireTraverserCloporte, 12000);
+    // Fait apparaître un nouveau cloporte toutes les 16 secondes
+    setInterval(faireTraverserCloporte, 16000);
 }
+
+// spoil
+
+document.querySelectorAll(".spoiler").forEach(spoiler => {
+
+    spoiler.addEventListener("click", () => {
+        spoiler.classList.add("revele");
+    });
+
+});
