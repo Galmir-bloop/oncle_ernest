@@ -136,16 +136,13 @@ h2 {
 .spoiler-cache {
     position: absolute;
     inset: 0;
-
     background: #000;
     color: #fff;
-
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Après le clic */
 .spoiler.revele .spoiler-cache {
     display: none;
 }
