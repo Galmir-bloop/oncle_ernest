@@ -403,3 +403,88 @@ document.querySelectorAll(".spoiler").forEach(spoiler => {
 
 
 });
+
+/* =========================
+   MENU MOBILE
+========================= */
+
+const boutonMenu = document.querySelector(".bouton-menu-mobile");
+const navigation = document.querySelector("nav");
+const fondMenu = document.querySelector(".fond-menu-mobile");
+
+if (boutonMenu && navigation && fondMenu) {
+
+    function ouvrirMenu() {
+
+        navigation.classList.add("menu-ouvert");
+        fondMenu.classList.add("visible");
+        boutonMenu.classList.add("ouvert");
+
+        boutonMenu.setAttribute("aria-expanded", "true");
+        boutonMenu.setAttribute("aria-label", "Fermer le menu");
+
+        document.body.style.overflow = "hidden";
+    }
+
+
+    function fermerMenu() {
+
+        navigation.classList.remove("menu-ouvert");
+        fondMenu.classList.remove("visible");
+        boutonMenu.classList.remove("ouvert");
+
+        boutonMenu.setAttribute("aria-expanded", "false");
+        boutonMenu.setAttribute("aria-label", "Ouvrir le menu");
+
+        document.body.style.overflow = "";
+    }
+
+
+    boutonMenu.addEventListener("click", function () {
+
+        if (navigation.classList.contains("menu-ouvert")) {
+            fermerMenu();
+        } else {
+            ouvrirMenu();
+        }
+
+    });
+
+
+    /* Clic sur le fond sombre */
+
+    fondMenu.addEventListener("click", fermerMenu);
+
+
+    /* Ouverture / fermeture des sous-menus */
+
+    const menusDeroulants =
+        document.querySelectorAll(".menu-deroulant");
+
+    menusDeroulants.forEach(function (menu) {
+
+        const titre = menu.querySelector(":scope > span");
+
+        titre.addEventListener("click", function () {
+
+            menu.classList.toggle("ouvert");
+
+        });
+
+    });
+
+
+    /* Fermeture du menu après avoir choisi une page */
+
+    const liensMenu =
+        navigation.querySelectorAll("a");
+
+    liensMenu.forEach(function (lien) {
+
+        lien.addEventListener("click", function () {
+            fermerMenu();
+        });
+
+    });
+
+}
