@@ -38,7 +38,13 @@ function faireTraverserCloporte() {
 
 
 
-    document.getElementById("cloporte-container").appendChild(cloporte);
+    const containerCloporte = document.getElementById("cloporte-container");
+
+    if (!containerCloporte) {
+        return;
+    }
+
+    containerCloporte.appendChild(cloporte);
 
 
 
@@ -340,7 +346,7 @@ function faireTraverserCloporte() {
 
 // Active les cloportes uniquement sur les écrans de plus de 768px
 
-if (window.innerWidth > 768) {
+if (window.innerWidth > 768 && document.getElementById("cloporte-container")) {
 
     let timerCloporte = null;
 
@@ -410,14 +416,12 @@ document.querySelectorAll(".spoiler").forEach(spoiler => {
 
 const boutonMenu = document.querySelector(".bouton-menu-mobile");
 const navigation = document.querySelector("nav");
-const fondMenu = document.querySelector(".fond-menu-mobile");
 
-if (boutonMenu && navigation && fondMenu) {
+if (boutonMenu && navigation) {
 
     function ouvrirMenu() {
 
         navigation.classList.add("menu-ouvert");
-        fondMenu.classList.add("visible");
         boutonMenu.classList.add("ouvert");
 
         boutonMenu.setAttribute("aria-expanded", "true");
@@ -430,7 +434,6 @@ if (boutonMenu && navigation && fondMenu) {
     function fermerMenu() {
 
         navigation.classList.remove("menu-ouvert");
-        fondMenu.classList.remove("visible");
         boutonMenu.classList.remove("ouvert");
 
         boutonMenu.setAttribute("aria-expanded", "false");
@@ -439,6 +442,8 @@ if (boutonMenu && navigation && fondMenu) {
         document.body.style.overflow = "";
     }
 
+
+    /* Ouverture / fermeture du menu */
 
     boutonMenu.addEventListener("click", function () {
 
@@ -451,15 +456,12 @@ if (boutonMenu && navigation && fondMenu) {
     });
 
 
-    /* Clic sur le fond sombre */
-
-    fondMenu.addEventListener("click", fermerMenu);
-
-
-    /* Ouverture / fermeture des sous-menus */
+    /* =========================
+       SOUS-MENUS
+    ========================= */
 
     const menusDeroulants =
-        document.querySelectorAll(".menu-deroulant");
+        navigation.querySelectorAll(".menu-deroulant");
 
     menusDeroulants.forEach(function (menu) {
 
@@ -474,7 +476,9 @@ if (boutonMenu && navigation && fondMenu) {
     });
 
 
-    /* Fermeture du menu après avoir choisi une page */
+    /* =========================
+       FERMETURE APRÈS CLIC
+    ========================= */
 
     const liensMenu =
         navigation.querySelectorAll("a");
