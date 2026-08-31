@@ -8,6 +8,7 @@
 
 html {
     hyphens: auto;
+    overflow-y: scroll;
 }
 
 body {
