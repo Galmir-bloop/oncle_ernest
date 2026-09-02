@@ -144,7 +144,7 @@ figure img,
 }
 
 .image-petite img {
-    max-width: 230px;
+    max-width: 300px;
 }
 
 .titre-icone {
@@ -405,6 +405,13 @@ footer a:hover {
        BASE MOBILE
     ========================= */
 
+    body {
+        font-size: 14px;
+        line-height: 1.6;
+        letter-spacing: -0.1px;
+    }
+
+
     main {
         margin-top: 84px;
         padding: 0 15px;
@@ -428,6 +435,9 @@ footer a:hover {
         z-index: 1000;
     }
 
+    footer {
+    font-size: 10px;
+    }
 
     /* =========================
        LOGO MOBILE
@@ -501,6 +511,8 @@ footer a:hover {
         cursor: pointer;
 
         z-index: 1002;
+
+        -webkit-tap-highlight-color: transparent;
     }
 
     .bouton-menu-mobile span {
@@ -516,6 +528,12 @@ footer a:hover {
             opacity 0.25s ease;
     }
 
+    .bouton-menu-mobile:active,
+    .bouton-menu-mobile:focus {
+        background: transparent;
+        outline: none;
+        box-shadow: none;
+    }
 
     /* =========================
        BOUTON → CROIX
