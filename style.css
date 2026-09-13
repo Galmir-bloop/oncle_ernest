@@ -383,6 +383,10 @@ footer a:hover {
     cursor: pointer;
 }
 
+body[data-cloporte="v2"] .cloporte {
+    width: 48px;
+}
+
 
 /* =========================
    ELEMENTS DU MENU MOBILE
