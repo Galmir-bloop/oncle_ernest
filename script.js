@@ -141,7 +141,7 @@ function faireTraverserCloporte(images) {
 
     // Vitesse du cloporte
 
-    const vitesse = 1.2 + Math.random() * 1.4;
+    const vitesse = 1.5 + Math.random() * 1.1;
 
 
     // Gestion des changements de direction
